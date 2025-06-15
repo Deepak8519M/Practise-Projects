@@ -8,8 +8,10 @@ function App() {
   return (
     <div>
       <Navigation />
-      <HeroTop />
-      <HeroBtm />
+      <main>
+        <HeroTop />
+        <HeroBtm />
+      </main>
     </div>
   );
 }

@@ -1,10 +1,12 @@
 import React from "react";
 import "./Button.css";
 
-function Button() {
+function Button({ text, icon, isActive }) {
   return (
     <div>
-      <button>VIA SUPPORT CHAT</button>
+      <button className={isActive ? "secondary_btn" : "primary_btn"}>
+        {icon} {text}
+      </button>
     </div>
   );
 }

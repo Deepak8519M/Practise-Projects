@@ -1,4 +1,32 @@
 .btm {
-  margin-top: 20px;
   background: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.btm img {
+  width: 400px;
+}
+.button-grp {
+  display: flex;
+  background: blueviolet;
+  gap: 24px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+}
+.contact label {
+  position: absolute;
+  color: black;
+  top: -14px;
+  background: white;
+  padding: 4px;
+  left: 8px;
+}
+.contact input {
+  padding: 16px;
 }
