@@ -14,12 +14,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   /* background: red; */
   padding: 2px 8px;
 }
 main {
   height: calc(100% - 72px);
-  /* background: blueviolet; */
+  margin-top: 10px;
 }

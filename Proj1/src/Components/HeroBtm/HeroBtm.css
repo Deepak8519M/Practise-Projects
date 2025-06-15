@@ -1,12 +1,9 @@
 .btm {
-  /* background: greenyellow; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
   width: 1000px;
   margin: 10px auto;
-  padding: 5px;
 }
 
 .btm img {
@@ -33,4 +30,10 @@
 }
 .contact input {
   padding: 16px;
+  font-size: 15px;
+}
+.btn_left {
+  display: flex;
+  justify-content: end;
+  margin-top: 3px;
 }

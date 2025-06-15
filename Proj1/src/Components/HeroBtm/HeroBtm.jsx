@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button/Button";
 import "./HeroBtm.css";
 
@@ -7,6 +7,20 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function HeroBtm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+
+  const handle = (e) => {
+    e.preventDefault();
+    setName(e.target[0].value);
+    setEmail(e.target[1].value);
+    setText(e.target[2].value);
+
+    console.log(name);
+    console.log(email);
+    console.log(text);
+  };
   return (
     <div className="btm">
       <div className="left">
@@ -23,7 +37,7 @@ function HeroBtm() {
           />
         </div>
         <Button isActive={true} text="VIA EMAIL FORM" icon={<MdEmail />} />
-        <form>
+        <form onSubmit={handle}>
           <div className="contact">
             <label htmlFor="name">Name</label>
             <input type="text" />
@@ -34,7 +48,14 @@ function HeroBtm() {
           </div>
           <div className="contact">
             <label htmlFor="text">Text</label>
-            <textarea name="text" rows={10}></textarea>
+            <textarea
+              style={{ padding: "20px" }}
+              name="text"
+              rows={6}
+            ></textarea>
+          </div>
+          <div className="btn_left">
+            <button className="primary_btn">Submit</button>
           </div>
         </form>
       </div>

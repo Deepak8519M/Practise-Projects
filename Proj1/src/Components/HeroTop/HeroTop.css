@@ -1,10 +1,9 @@
 .hero_top {
-  margin-top: 10px;
   max-width: 1000px;
   margin: 0 auto;
-  /* background: red; */
-  margin-top: 20px;
 }
 .hero_top p {
   max-width: 860px;
+  font-size: 13px;
 }
+
