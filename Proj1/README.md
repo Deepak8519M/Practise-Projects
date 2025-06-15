@@ -1,4 +1,4 @@
-Absolutely, Deepak! Let's **build the whole concept from the most basic level** — as if you're hearing it for the first time — and go step by step to the end where the computer actually understands and processes data.
+
 We'll cover:
 
 * 🔌 Electrical signals
