@@ -1,16 +1,20 @@
 .btm {
-  background: greenyellow;
+  /* background: greenyellow; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  width: 1000px;
+  margin: 10px auto;
+  padding: 5px;
 }
+
 .btm img {
   width: 400px;
 }
 .button-grp {
   display: flex;
-  background: blueviolet;
+  /* background: blueviolet; */
   gap: 24px;
 }
 .contact {

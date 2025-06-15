@@ -16,11 +16,10 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  background: red;
+  /* background: red; */
   padding: 2px 8px;
-  height: 72px;
 }
 main {
   height: calc(100% - 72px);
-  background: blueviolet;
+  /* background: blueviolet; */
 }

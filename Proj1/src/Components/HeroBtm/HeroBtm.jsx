@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 
 function HeroBtm() {
   return (
-    <div className="container btm">
+    <div className="btm">
       <div className="left">
         <div className="button-grp">
           <Button
@@ -27,6 +27,14 @@ function HeroBtm() {
           <div className="contact">
             <label htmlFor="name">Name</label>
             <input type="text" />
+          </div>
+          <div className="contact">
+            <label htmlFor="email">Email</label>
+            <input type="email" />
+          </div>
+          <div className="contact">
+            <label htmlFor="text">Text</label>
+            <textarea name="text" rows={10}></textarea>
           </div>
         </form>
       </div>
