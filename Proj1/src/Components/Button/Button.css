@@ -1,0 +1,8 @@
+button {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  background: black;
+  color: white;
+  padding: 8px 14px;
+}
