@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, OverlayButton } from "./Button";
 import styled from "styled-components";
 
-function RollDice({ setScore, rollDice, randomGenerate, DiceRoll }) {
+function RollDice({ setScore, rollDice, randomGenerate, DiceRoll,toggle }) {
   return (
     <DiceFlex>
       <div>
@@ -12,7 +12,7 @@ function RollDice({ setScore, rollDice, randomGenerate, DiceRoll }) {
       <div className="btns">
         <OverlayButton onClick={() => setScore(0)}>Reset</OverlayButton>
         <Button>Show Rules</Button>
-        <Button>Back to Main</Button>
+        <Button onClick={toggle}>Back to Main</Button>
       </div>
     </DiceFlex>
   );

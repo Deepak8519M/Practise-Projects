@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-function NumberChoose() {
+function NumberChoose({
+  numberSelected,
+  setNumberSelected,
+  error,
+  setError,
+  
+}) {
   const array = [1, 2, 3, 4, 5, 6];
 
-  const [numberSelected, setNumberSelected] = useState(null);
   return (
     <NumberBox>
-      <p>Error Code Written Later</p>
+      <p className="err">{error}</p>
       <div className="boxflex">
         {array.map((value, key) => (
           <Box
             isSelected={numberSelected === value}
             onClick={() => {
               setNumberSelected(value);
+              setError("");
             }}
             key={key}
           >
@@ -41,6 +47,9 @@ const NumberBox = styled.div`
     display: flex;
     gap: 5px;
     align-items: center;
+  }
+  .err {
+    color: red;
   }
 
   p {
