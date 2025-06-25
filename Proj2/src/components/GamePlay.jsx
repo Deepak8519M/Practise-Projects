@@ -11,6 +11,8 @@ function GamePlay({ toggle }) {
   const [numberSelected, setNumberSelected] = useState(null);
   const [error, setError] = useState("");
 
+  const [msg, setMsg] = useState(false);
+
   const randomGenerate = (max, min) => {
     return Math.floor(Math.random() * (max - min)) + min;
   };
@@ -52,6 +54,8 @@ function GamePlay({ toggle }) {
         randomGenerate={randomGenerate}
         DiceRoll={DiceRoll}
         toggle={toggle}
+        setMsg={setMsg}
+        msg={msg}
       />
     </Main>
   );
