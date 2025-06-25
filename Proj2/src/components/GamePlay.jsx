@@ -18,7 +18,7 @@ export default GamePlay;
 
 const Main = styled.main`
   max-width: 1200px;
-  background-color: blue;
+  /* background-color: blue; */
   height: 100vh;
   margin: 0 auto;
   .navigation {
