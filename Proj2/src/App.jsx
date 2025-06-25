@@ -5,7 +5,7 @@ import StartGame from "./components/StartGame";
 import GamePlay from "./components/GamePlay";
 
 function App() {
-  const [startGame, setStartGame] = useState(true);
+  const [startGame, setStartGame] = useState(false);
 
   const toggle = () => {
     setStartGame((prev) => !prev);
