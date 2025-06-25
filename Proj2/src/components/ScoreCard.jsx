@@ -20,7 +20,7 @@ const TotalScore = styled.div`
 
   display: flex;
   align-items: center;
-  height: 100px;
+  /* height: 100px; */
 
   h1 {
     font-size: 90px;

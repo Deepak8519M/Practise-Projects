@@ -26,6 +26,7 @@ const Main = styled.main`
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 130px;
   }
 `;
