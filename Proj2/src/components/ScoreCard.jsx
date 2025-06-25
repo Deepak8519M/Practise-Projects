@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-function ScoreCard() {
+function ScoreCard({ score }) {
   return (
     <TotalScore>
-      <h1>0</h1>
+      <h1>{score}</h1>
       <p>Total Score</p>
     </TotalScore>
   );

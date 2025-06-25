@@ -4,7 +4,7 @@ import styled from "styled-components";
 function NumberChoose() {
   const array = [1, 2, 3, 4, 5, 6];
 
-  const [numberSelected, setNumberSelected] = useState(1);
+  const [numberSelected, setNumberSelected] = useState(null);
   return (
     <NumberBox>
       <p>Error Code Written Later</p>
