@@ -2,10 +2,10 @@ import React from "react";
 
 import styled from "styled-components";
 
-function App() {
+function StartGame() {
   return <div>
     
   </div>;
 }
 
-export default App;
+export default StartGame;
