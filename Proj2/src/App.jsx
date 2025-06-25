@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styled from "styled-components";
+import StartGame from "./components/StartGame";
+import GamePlay from "./components/GamePlay";
 
 function App() {
-  return <div>
-    
-  </div>;
+  const [startGame, setStartGame] = useState(true);
+
+  const toggle = () => {
+    setStartGame((prev) => !prev);
+  };
+
+  return (
+    <div>
+      {startGame ? <GamePlay toggle={toggle} /> : <StartGame toggle={toggle} />}
+    </div>
+  );
 }
 
 export default App;
